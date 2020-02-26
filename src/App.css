@@ -6,25 +6,25 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.side-bar {
+.nav-bar {
   width: 1024px;
   background: #4a90e2;
   height: 64px;
   display: flex;
   align-items: stretch;
 }
-.side-bar-title {
+.nav-bar-title {
   font-weight: bold;
   color: #ffffff;
   font-size: x-large;
 }
-.side-bar-perfil {
+.nav-bar-perfil {
   font-weight: bold;
   color: #ffffff;
   display: flex;
   align-items: flex-end;
 }
-.side-top {
+.nav-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
