@@ -6,8 +6,8 @@ module.exports = {
     path: path.resolve(__dirname, "public"),
     filename: "bundle.js"
   },
-  devServer:{
-    contentBase: path.resolve(__dirname,"public")
+  devServer: {
+    contentBase: path.resolve(__dirname, "public")
   },
   module: {
     rules: [
@@ -28,6 +28,12 @@ module.exports = {
             loader: "css-loader"
           }
         ]
+      },
+      {
+        test: /.*\.(gif|png|jpe?g)$/i,
+        use: {
+          loader: "file-loader"
+        }
       }
     ]
   }

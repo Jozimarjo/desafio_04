@@ -1,18 +1,19 @@
 import React from "react";
 import "./App.css";
+import Header from "./components/header";
+
+import PostList from "./components/PostList";
+import PostItem from "./components/postItem";
 
 function App() {
   return (
-    <nav className="nav-bar">
-      <div className="nav-top">
-        <div className="nav-bar-title">Facebook.</div>
-        <div className="nav-bar-perfil">
-          <span>Meu perfil</span>
-          <i className="material-icons">account_circle</i>
-        </div>
-      </div>
-    </nav>
+    <div className="container">
+      <Header />;
+      
+      <PostList/>
+    </div>
   );
 }
+
 
 export default App;
