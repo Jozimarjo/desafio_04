@@ -9,8 +9,7 @@ p {
   margin: 0px;
 }
 
-.cont {
-}
+
 
 .container {
   display: flex;
@@ -50,37 +49,38 @@ p {
   display: flex;
   flex-direction: column;
   background: #fff;
+  align-self: center;
+  align-items: stretch;
   width: 700px;
   min-height: 250px;
-  align-items: stretch;
-  align-self: center;
-  color: black;
   margin-bottom: 10px;
+  color: #3e3e3e;
+
+}
+.post-commen{
+  background: green;
 }
 .post-header {
   display: flex;
-  flex-direction: row;
-  flex-direction: column;
-  justify-content: space-between;
+  /* flex-direction: row; */
+  color: #3e3e3e;
   width: 100%;
-  max-height: 110px;
+  max-height: 90px;
   background: #ffffff;
-  align-items: stretch;
-  /* height: 110px; */
-  margin-bottom: 10px;
+  /* align-items: stretch; */
+  /* padding: 24px; */
 }
+
 .post-header .post-top {
   display: flex;
   /* justify-content: space-between; */
-  /* width: 100%; */
+  width: 100%;
   /* margin-right: 10px; */
   padding: 10px;
 }
 
 .post-header .post-title {
   /* background: red; */
-  display: flex;
-  flex-direction: column;
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
@@ -114,7 +114,7 @@ p {
   min-width: 622px;
   /* height: 100px */
 }
-.post-text2 p {
+.post-text2 span {
   font-family: Arial;
   font-style: normal;
   font-weight: bold;
@@ -149,4 +149,30 @@ p {
   margin-top: 18px;
 
   background: #eeeeee;
+}
+.post-comment-top {
+  display: flex;
+  padding: 12px;
+}
+.post-content {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 20px;
+  color: #3e3e3e;
+  background: #eeeeee;
+  border-radius: 20px;
+  min-width: 622px;
+  padding: 9px;
+}
+.comment-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background: #ffffff;
+  align-items: stretch;
+  /* height: 110px; */
+  /* margin-bottom: 10px; */
 }

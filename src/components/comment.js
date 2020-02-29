@@ -4,15 +4,16 @@ import diego from "../assets/diego.jpg";
 
 function Comment({ comment }) {
   return (
-    <div className="post-header">
-      <div className="post-top">
+    <div className="comment-header">
+      <div className="post-comment-top">
         <div className="post-img">
           <img className="img" src={comment.author.avatar} />
         </div>
-        <div className="post-text2">
-          <p>
+        <div className="post-content">
+          <span>
+            <strong>{comment.author.name} </strong>
             {comment.content}
-          </p>
+          </span>
         </div>
       </div>
     </div>
