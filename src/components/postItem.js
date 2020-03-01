@@ -15,7 +15,7 @@ function PostItem({ post }) {
           </span>
         </div>
       </div>
-      <p>content sera aqui</p>
+      <p>{post.content}</p>
       <div className="break"></div>
       {post.comments.map(comment => (
         <Comment comment={comment} />
@@ -25,21 +25,3 @@ function PostItem({ post }) {
 }
 
 export default PostItem;
-
-{
-  /* <div className="post-header">
-<div className="post-top">
-  <div className="post-img">
-    <img className="img" src={post.author.avatar} />
-  </div>
-  <div className="post-title">
-    <span>{post.author.name}</span>
-    <span className="date">{post.date} </span>
-  </div>
-</div>
-<span className="post-text">
-  <strong>{post.author.name} </strong>
-  {post.content}
-</span>
-</div> */
-}

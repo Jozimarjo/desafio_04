@@ -10,10 +10,10 @@ function Comment({ comment }) {
           <img className="img" src={comment.author.avatar} />
         </div>
         <div className="post-content">
-          <span>
+          <p>
             <strong>{comment.author.name} </strong>
             {comment.content}
-          </span>
+          </p>
         </div>
       </div>
     </div>
